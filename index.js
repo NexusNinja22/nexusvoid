@@ -4,8 +4,8 @@ const client = new Discord.Client();
 
 client.once('ready', () => {
     console.log('Ready!')
-    client.user.setStatus('idle')
-    client.user.setActivity("Prefix:^ | I'm A Bot!")
+    client.user.setStatus('online')
+    client.user.setActivity("^help | I'm A Bot!")
 
 })
 //Moderation Commands
