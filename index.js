@@ -32,6 +32,19 @@ client.on('message', message => {
         if(message.content.startsWith(`${prefix}permscheck`)) {
             message.channel.send("You have Moderator Permissions")
         }
+        if(message.content.startsWith(`${prefix}advancedcmd`)) {
+            
+            let botembed = new Discord.RichEmbed()
+            .setDescription("Staff Commands")
+            .setColor("15f153")
+            .setFooter("NexusVoid")
+            .addField("^kick (mentionUser)", "Kicks the user who is mentioned")
+            .addField("^ban (mentionUser)", "Bans the user who is mentioned")
+            .addField("^permscheck", "Lets you know if you have kick/ban permissions");
+            
+            return message.channel.send(botembed);
+        
+        }
     }
 })
 //Public Commands
