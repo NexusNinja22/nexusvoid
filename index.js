@@ -54,6 +54,16 @@ client.on('message', message => {
 
         return message.channel.send(botembed);
     }
+    if(message.content.startsWith(`${prefix}invite`)) {
+        
+        let botembed = new Discord.RishEmbed()
+        .setDescription("Invite NexusVoid To Your Server!")
+        .setColor("#15f153")
+        .setFooter("NexusVoid")
+        .addField("Invite Link", "https://discordapp.com/oauth2/authorize?client_id=451594709253488660&scope=bot&permissions=8");
+        
+        return message.channel.send(botembed);
+    }
 })
 
 
