@@ -5,7 +5,7 @@ const client = new Discord.Client();
 client.once('ready', () => {
     console.log('Ready!')
     client.user.setStatus('online')
-    client.user.setActivity("^help | I'm A Bot!")
+    client.user.setActivity("^help | Made by Bedrock!")
 
 })
 //Moderation Commands
